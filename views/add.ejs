@@ -1,0 +1,19 @@
+<%- include("menu.ejs")%> <br /><br />
+<h2>Add Users</h2>
+<br /><br />
+
+<form action="/user-action" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" />
+  <br /><br />
+
+  <label for="age">Age:</label>
+  <input type="text" id="age" name="age" />
+  <br /><br />
+
+  <label for="place">Place:</label>
+  <input type="text" id="place" name="place" />
+  <br /><br />
+
+  <button type="submit">Submit</button>
+</form>

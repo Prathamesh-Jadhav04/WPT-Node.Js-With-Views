@@ -1,0 +1,19 @@
+<%- include("menu.ejs")%> <br /><br />
+
+
+<h2>Users</h2>
+<table border="1" cellpadding="10">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Place</th>
+  </tr>
+
+  <% dataSet.forEach(function(value) { %>
+  <tr>
+    <td><%= value.age %></td>
+    <td><%= value.place %></td>
+    <td><%= value.name %></td>
+  </tr>
+<% }) %>
+</table>
